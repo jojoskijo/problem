@@ -1,0 +1,458 @@
+/* ***************************** */
+/* BELOW 1344px  (smaller desktops) */
+/* ***************************** */
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 5rem;
+  }
+}
+
+/* ***************************** */
+/* BELOW 1200px  (Landscape Tablets) */
+
+@media (max-width: 75em) {
+  .heading-primary {
+    font-size: 3.8rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    padding: 2.2rem 4.4rem;
+    font-size: 2rem;
+  }
+
+  .hero {
+    gap: 12.6rem;
+  }
+
+  .featured-logo {
+    height: 2.4rem;
+  }
+
+  .steps {
+    font-size: 8.6rem;
+  }
+
+  .meal-items {
+    font-size: 1.6rem;
+  }
+
+  .meal-title {
+    font-size: 2rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container-testimonials {
+    padding: 9.6rem 0 9.6rem 2.4rem;
+  }
+
+  .pricing {
+    padding: 2.8rem;
+  }
+
+  .feature-title {
+    font-size: 2rem;
+  }
+
+  .section-cta {
+    padding: 4.8rem 2.4rem 4.8rem 2.4rem;
+  }
+
+  .grid--cta {
+    column-gap: 0;
+  }
+
+  .grid--footer {
+    column-gap: 4.4rem;
+  }
+}
+
+/* ***************************** */
+/* BELOW 992px  (Tablets) */
+
+@media (max-width: 62em) {
+  /* 8/16 = .5 = 50%  */
+
+  html {
+    font-size: 50%;
+  }
+  .heading-primary {
+    font-size: 4.5rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .hero {
+    gap: 12.6rem;
+  }
+
+  .featured-logo {
+    height: 2.4rem;
+  }
+
+  .steps {
+    font-size: 8.6rem;
+  }
+
+  .meal-items {
+    font-size: 1.6rem;
+  }
+
+  .meal-title {
+    font-size: 2rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .container-testimonials {
+    padding: 4.8rem 2.4rem 0 2.4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .pricing {
+    padding: 2.8rem;
+  }
+
+  .feature-title {
+    font-size: 2rem;
+  }
+
+  .section-cta {
+    padding: 4.8rem 2.4rem 4.8rem 2.4rem;
+  }
+
+  .grid--cta {
+    column-gap: 0;
+  }
+
+  .grid--footer {
+    column-gap: 4.4rem;
+  }
+
+  /*MOBILE NAVIGATION  */
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.856);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(2px);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8rem;
+    transform: translateX(100%);
+    transition: all 0.4s ease-in;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .mobile-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .mobile-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mobile-icon[name="close-outline"] {
+    display: none;
+  }
+
+  .mobile-icon[name="menu-outline"] {
+    display: block;
+  }
+
+  .mobile-icon {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+  }
+
+  .main-nav-link {
+  }
+}
+
+/* ***************************** */
+/* BELOW 800px  (Smaller Tablets) */
+
+@media (max-width: 50em) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+    padding: 0 4rem;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+  .delivered-meals {
+    margin-top: 2rem;
+  }
+  .section-hero {
+    padding: 4.8rem 0 4.8rem 0;
+  }
+  .featured-logo {
+    height: 1.8rem;
+  }
+  .section-how {
+    padding: 4.8rem 0 0;
+  }
+
+  .step-description {
+    font-size: 1.6rem;
+  }
+  .step-img {
+    width: 50%;
+  }
+  .grid--2-cols {
+    column-gap: 6.4rem;
+  }
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .meal-list {
+    /* grid-row: 2 / -1; */
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+  .section-meal {
+    padding: 4.8rem 0;
+  }
+  .meal {
+    margin-bottom: 0;
+  }
+  .heading-secondary {
+    font-size: 2.8rem;
+  }
+  .list-title {
+    font-size: 2.8rem;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .container-testimonials {
+    padding: 4.8rem 2.4rem 0 2.4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .section-pricing {
+    padding: 0;
+  }
+  .pricing {
+    width: 100%;
+  }
+  .pricing-title {
+    font-size: 1.8rem;
+  }
+  .pricing-price {
+    font-size: 4.4rem;
+  }
+  .pricing-text {
+    font-size: 1.8rem;
+  }
+  .list {
+    font-size: 1.8rem;
+  }
+  .pricing-detail {
+    margin-bottom: 2.4rem;
+  }
+  .features {
+    row-gap: 6.4rem;
+  }
+  .feature-text {
+    font-size: 1.8rem;
+  }
+  .testimonial-text {
+    font-size: 1.8rem;
+  }
+  .form-cta {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .form-heading {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .form-description {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+  }
+  .form-cta label {
+    font-size: 1.8rem;
+  }
+  .form-cta input,
+  .form-cta select {
+    font-size: 1.8rem;
+  }
+
+  .info-col {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .logo-col,
+  .contact-col {
+    grid-column: span 3;
+  }
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* ***************************** */
+/* BELOW 592px  (Phones) */
+@media (max-width: 37em) {
+  .hero-img {
+    width: 80%;
+  }
+
+  .heading-primary {
+    font-size: 3.3rem;
+  }
+
+  .heading-secondary {
+    line-height: 1.2;
+    font-size: 3.5rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    padding: 1.2rem 2.4rem;
+  }
+
+  .delivered-meals {
+    margin-top: 3rem;
+  }
+
+  .featured-logo {
+    height: 1.5rem;
+  }
+
+  .section-how {
+    padding: 2.4rem 0 0;
+  }
+
+  .grid--2-cols {
+    padding-top: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .steps {
+    font-size: 6.6rem;
+  }
+
+  /* .step-img-box:nth-child(2) {
+  grid-row: 1;
+} */
+
+  .step-img-box-first {
+    grid-row: 1;
+  }
+
+  .step-img-box-third {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(2rem);
+  }
+
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .section-pricing {
+    padding-top: 2.8rem;
+  }
+
+  .grid--cta {
+    grid-template-columns: 1fr;
+    row-gap: 0;
+  }
+
+  .form-img-box {
+    grid-row: 1;
+    height: 35rem;
+  }
+
+  .section-footer {
+    padding: 4.8rem 0 9.6rem 0;
+  }
+
+  .footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+  }
+
+  .footer-link:link,
+  .footer-link:visited {
+    line-height: 1;
+  }
+}
+
+/* 0 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+/* rem and em do NOT  depend on html font-size in media queries!
+Instead, 1rem = 1em = 16px */
